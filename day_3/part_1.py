@@ -13,12 +13,7 @@ def solution(input):
                 pair = match.replace("mul(",'').replace(")",'').split(",")
                 print(pair)
                 sum += int(pair[0])*int(pair[1])
-                #stripped.append(match.replace("mul(",'').replace(")",''))
 
-        print(sum)
-
-
-       # for line in file:
-            
+        print(sum)            
 
 solution('input.txt')
