@@ -1,1 +1,1 @@
-# adventofcode_2024
+# Gustafs Advent of Code 2024
