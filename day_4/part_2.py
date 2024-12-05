@@ -1,5 +1,3 @@
-import re
-
 def main():
     with open('input.txt') as file:
         c = 0
@@ -27,10 +25,8 @@ def explore(m, i, j):
         
     return 0
 
-
-
-
 def checkbounds(m,i,j):
     return 0 <= i < len(m) and 0 <= j < len(m[0])
+
 if __name__ == "__main__":
     main()
