@@ -61,7 +61,6 @@ def trywalk(m, curr, init, guard, init_guard, guards, direction):
     (di, dj) = start
 
     while(checkbounds(m, di, dj)):
-        m[new_obj[0]][new_obj[1]] = "O"
         if m[di][dj] == '#' or (di, dj) == new_obj:
             index += 1
             index %= 4
