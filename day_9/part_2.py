@@ -14,7 +14,7 @@ def main():
 
     gaps = {}
     i = 0
-    
+
     while i < len(block_list):
         if block_list[i] == ".":
             check_i = i
@@ -45,8 +45,7 @@ def main():
                 gap_i, gap = check_gaps(block_size[curr], gaps)
                 if (gap_i, gap) != (-1, -1) and gap_i < check_i:
                     for j in range(block_size[curr]):
-                        real = gap_i + j
-                        block_list[i-j], block_list[real] = block_list[real], block_list[i-j]
+                        block_list[i-j], block_list[gap_i+j] = block_list[gap_i+j], block_list[i-j]
 
                     del gaps[gap_i]
                     gaps[gap_i+space] = gap-block_size[curr]
