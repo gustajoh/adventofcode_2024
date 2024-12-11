@@ -20,11 +20,10 @@ def main():
 
     for i in range(len(block_list)-1,-1,-1):
         if block_list[i] != "." and block_list[i] != "0":
-            check_i = i
-            curr = block_list[check_i]
+            curr = block_list[i]
             space = block_size[curr]
             gap_i, gap = check_gaps(block_size[curr], gaps)
-            if (gap_i, gap) != (-1, -1) and gap_i < check_i:
+            if (gap_i, gap) != (-1, -1) and gap_i < i:
                 for j in range(block_size[curr]):
                     block_list[i-j], block_list[gap_i+j] = block_list[gap_i+j], block_list[i-j]
 
