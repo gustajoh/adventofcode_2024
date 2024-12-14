@@ -8,7 +8,7 @@ def main():
         stones[int(s)] = 1
     first = ""
     second = ""
-    for k in range(75):
+    for _ in range(150):
         cp = {}
         for stone, count in list(stones.items()):
             l = len(str(stone))
